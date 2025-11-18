@@ -19,16 +19,24 @@ Compatibility with Flask or other backend servers
 
 📁 Project Structure
 Med-Detect/
+
 │── index.html
 
+
 │── styles/
+
 │     └── style.css
 
+
 │── scripts/
+
 │     └── app.js
 
+
 │── assets/
+
 │     └── icons, fonts, images
+
 
 └── README.md
 
