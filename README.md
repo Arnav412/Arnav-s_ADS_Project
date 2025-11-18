@@ -1,101 +1,102 @@
 Med Detect — Post-Surgical Brain Tumor Detection
 
-Med Detect is a web-based interface designed to help visualize, upload, and analyze post-surgical brain MRI scans for detecting tumor recurrence.
-The interface provides a clean, modern UI built using HTML, CSS, and JavaScript, and can be integrated with backend ML models or Flask APIs for prediction.
+Med Detect is a web-based interface developed for uploading, previewing, and analyzing post-surgical brain MRI scans. The goal of this project is to build a clean, responsive, and medical-grade frontend that can later be integrated with a machine learning model for tumor detection.
 
-🔍 Overview
+Project Description
 
-This project provides:
+This project contains the complete frontend structure for the Med Detect system.
+It includes an image upload section, a real-time preview feature, and a structured layout suitable for medical imaging workflows.
 
-A responsive frontend for uploading MRI images
+The interface is created using HTML, CSS, and JavaScript, along with Google Fonts to maintain a modern and professional look. The design is responsive and adapts well across different screen sizes.
 
-A preview container to display the selected scan
+Code Details and Structure
+Google Fonts
 
-UI components for titles, subtitles, and usage info
+The fonts Poppins and Inter are used to create a clean and minimal typography style that fits well with medical-interface design.
 
-A clean dark-theme layout suitable for AI/medical applications
+Layout
 
-Compatibility with Flask or other backend servers
+The UI contains:
 
-📁 Project Structure
+A header with the project title and subtitle
+
+A main container for uploading and previewing MRI images
+
+A preview box that displays the selected MRI scan
+
+A file input section
+
+Space reserved for prediction results or additional features
+
+Image Preview Logic
+
+The image preview is handled using JavaScript’s FileReader().
+Once an image is selected, it is converted to Base64 format and displayed instantly within the preview container, without reloading the page.
+
+Responsiveness
+
+The CSS is designed to scale smoothly across various screen sizes.
+The main card, preview area, upload section, and text elements all adjust fluidly for mobile, tablet, and desktop views.
+
+Visual Theme
+
+A soft and clean theme is used, featuring white, grey, and blue tones. Rounded corners and subtle shadows give the interface a modern and professional appearance aligned with typical medical dashboards.
+
+Project Folder Structure
 Med-Detect/
-
 │── index.html
-
-
 
 │── styles/
 
 │     └── style.css
 
-
 │── scripts/
 
 │     └── app.js
 
-
 │── assets/
 
-│     └── icons, fonts, images
+│     ├── icons/
 
+│     └── images/
 
 └── README.md
 
-⚙️ Technologies Used
+Features
 
-HTML5
-
-CSS3 (custom styling + Google Fonts)
-
-JavaScript (image preview, frontend logic)
-
-Flask / FastAPI backend for model prediction
-
-🚀 Features
-
-Upload MRI images directly from your system
+MRI scan upload functionality
 
 Real-time image preview
 
-Simple and intuitive UI
-
-Expandable for ML integration
+Minimal and intuitive interface
 
 Fully responsive layout
 
-📦 Installation & Setup
+Structured for integration with backend ML models
 
-Clone the repository
+Installation and Setup
 
-git clone https://github.com/yourusername/med-detect.git
-cd med-detect
+The project does not require any external dependencies.
+It runs directly in any modern web browser.
 
+Steps followed during setup:
 
-Open the project locally
+Clone or download the project
 
-Just open the index.html file in any browser.
+Open the index.html file in a browser
 
-OR
+The interface loads and functions immediately
 
-Use Live Server in VS Code:
+During development, VS Code with the Live Server extension was used for faster UI updates.
 
-Right click → "Open with Live Server"
+Usage
 
-▶️ Usage
+Open the main page
 
-Open the homepage
+Select the "Upload MRI Scan" option
 
-Click Upload MRI Scan
+Choose an MRI image from the system
 
-Select a post-surgical MRI image
+The preview appears instantly in the designated container
 
-The preview will appear instantly
-
-📌 Notes
-
-This project currently provides UI only.
-
-Machine learning logic must be connected separately.
-
-Ensure MRI images are in supported formats (PNG/JPG).
-
+This completes the frontend flow for MRI visualization.
